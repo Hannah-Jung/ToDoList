@@ -30,20 +30,20 @@ The To-Do List project is designed to provide users with a straightforward and i
 **1. Navigation Bar**:
 The navigation bar provides links to different sections of the website:
 
-- Home: View your to-do list and manage tasks.
-- In-Progress: View only the tasks that are currently in-progress.
-- Complete: View only the tasks that have been completed.
+- **Home**: View your to-do list and manage tasks.
+- **In-Progress**: View only the tasks that are currently in-progress.
+- **Complete**: View only the tasks that have been completed.
 
 **2. Adding Tasks**
 - Enter the task description in the input field labeled "ADD A TASK HERE".
 - Click the "Add" button (with a plus icon) or press the Enter key to add the task to your list.
 
 **3. Completing and Deleting Tasks**
-- Complete a Task: Click the checkmark button next to a task to mark it as complete.
-- Revert a Task: Click the rotate-left button next to a completed task to mark it as incomplete.
-- Delete a Task: Click the trash button next to a task to remove it from the list.
+- **Complete a Task**: Click the checkmark button next to a task to mark it as complete.
+- **Revert a Task**: Click the rotate-left button next to a completed task to mark it as incomplete.
+- **Delete a Task**: Click the trash button next to a task to remove it from the list.
 
 **4. Filtering Tasks**
-- All Tasks: View all tasks regardless of their status.
-- In-Progress: View only the tasks that are currently in-progress.
-- Complete: View only the tasks that have been completed.
+- **All Tasks**: View all tasks regardless of their status.
+- **In-Progress**: View only the tasks that are currently in-progress.
+- **Complete**: View only the tasks that have been completed.
