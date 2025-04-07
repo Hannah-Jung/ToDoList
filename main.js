@@ -10,7 +10,7 @@ let filterList = [];
 // addEventListener("event type", function())
 addButton.addEventListener("click", addTask);
 taskInput.addEventListener("keydown", function (event) {
-  if (event.keyCode === 13) {
+  if (event.key === "Enter") {
     addTask(event);
   }
 });
@@ -36,33 +36,73 @@ function addTask() {
 
 function render() {
   let resultHTML = "";
-  list = [];
-  if (mode === "all") {
-    list = taskList;
-  } else {
-    list = filterList;
-  }
+  list = mode === "all" ? taskList : filterList;
 
   for (let i = 0; i < list.length; i++) {
-    if (list[i].isComplete) {
-      resultHTML += `<div class="task task-complete" id="${list[i].id}">
-                        <span>${list[i].taskContent}</span>
+    if (list[i].isEditing) {
+      resultHTML += `<div class="task" id="${list[i].id}">
+                        <input type="text" value="${list[i].taskContent}" id="edit-${list[i].id}" class="edit-input">
                         <div class="button-box">
-                            <button onclick="toggleComplete('${list[i].id}')"><i class="fa-solid fa-rotate-left" style="color:#696969"></i></button>
-                            <button onclick="deleteTask('${list[i].id}')"><i class="fa-solid fa-trash" style="color:#696969"></i></button>
+                            <button onclick="saveTask('${list[i].id}')"><i class="fa-solid fa-save" style="color:#696969"></i></button>
+                            <button onclick="cancelEdit('${list[i].id}')"><i class="fa-solid fa-times" style="color:#696969"></i></button>
                         </div>
                     </div>`;
     } else {
-      resultHTML += `<div class="task" id="${list[i].id}">
+      resultHTML += `<div class="task ${
+        list[i].isComplete ? "task-complete" : ""
+      }" id="${list[i].id}">
                         <span>${list[i].taskContent}</span>
                         <div class="button-box">
-                            <button onclick="toggleComplete('${list[i].id}')"><i class="fa-solid fa-check" style="color:#696969"></i></button>
-                            <button onclick="deleteTask('${list[i].id}')"><i class="fa-solid fa-trash" style="color:#696969"></i></button>
+                            <button onclick="toggleComplete('${
+                              list[i].id
+                            }')"><i class="fa-solid fa-${
+        list[i].isComplete ? "rotate-left" : "check"
+      }" style="color:#696969"></i></button>
+                            <button onclick="editTask('${
+                              list[i].id
+                            }')"><i class="fa-solid fa-pen" style="color:#696969"></i></button>
+                            <button onclick="deleteTask('${
+                              list[i].id
+                            }')"><i class="fa-solid fa-trash" style="color:#696969"></i></button>
                         </div>
                     </div>`;
     }
   }
   document.getElementById("task-board").innerHTML = resultHTML;
+}
+
+function editTask(id) {
+  for (let i = 0; i < taskList.length; i++) {
+    if (taskList[i].id === id) {
+      taskList[i].isEditing = true;
+      break;
+    }
+  }
+  render();
+}
+
+function saveTask(id) {
+  let newValue = document.getElementById(`edit-${id}`).value;
+  if (newValue.trim() === "") return alert("⚠️ Task content cannot be empty.");
+
+  for (let i = 0; i < taskList.length; i++) {
+    if (taskList[i].id === id) {
+      taskList[i].taskContent = newValue;
+      taskList[i].isEditing = false;
+      break;
+    }
+  }
+  render();
+}
+
+function cancelEdit(id) {
+  for (let i = 0; i < taskList.length; i++) {
+    if (taskList[i].id === id) {
+      taskList[i].isEditing = false;
+      break;
+    }
+  }
+  render();
 }
 
 function toggleComplete(id) {
