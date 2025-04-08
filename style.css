@@ -157,7 +157,7 @@ section {
 }
 
 .button-box button:nth-child(2):hover {
-  background-color: rgba(236, 232, 185, 0.5);
+  background-color: rgba(248, 229, 215, .5);
 }
 
 .button-box button:nth-child(3):hover {
