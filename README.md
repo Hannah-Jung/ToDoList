@@ -1,6 +1,6 @@
 # To-Do List
 
-Welcome to the To-Do List project, a simple and efficient web application for managing your daily tasks. This project allows you to add, complete, and delete tasks, and filter them by their status.
+Welcome to the To-Do List project, a simple and efficient web application for managing your daily tasks. This app allows you to add, complete, update, and delete tasks, with the ability to filter them by status.
 
 ## Table of Contents
 
@@ -10,40 +10,37 @@ Welcome to the To-Do List project, a simple and efficient web application for ma
 - [Usage](#usage)
 
 ## Introduction
-The To-Do List project is designed to provide users with a straightforward and intuitive way to manage tasks. With a clean and modern interface, this application allows users to add new tasks, mark tasks as complete or incomplete, delete tasks, and filter tasks based on their status. The application is fully responsive, ensuring a seamless experience across all devices.
+The To-Do List project provides a straightforward way to manage tasks. With an intuitive interface, users can add, complete, edit, or delete tasks and filter them by status. Built with Bootstrap, the app is fully responsive and works seamlessly on all devices.
 
 ## Features
-- **Add New Tasks**: Easily add new tasks to your to-do list.
-- **Complete/Incomplete Tasks**: Mark tasks as complete or revert them to incomplete.
-- **Delete Tasks**: Remove tasks that are no longer needed.
-- **Filter Tasks**: View all tasks, only in-progress tasks, or only completed tasks.
-- **Responsive Design**: The application is fully responsive and works on all devices.
+- **Add New Tasks**: Easily add new tasks to the list.
+- **Complete/Incomplete Tasks**: Mark tasks as complete with a check button or revert them back to incomplete.
+- **Edit Tasks**: Modify task descriptions or cancel edits.
+- **Delete Tasks**: Remove tasks from the list with the delete button.
+- **Filter Tasks**: View tasks by status (All, In-Progress, Complete).
+- **Responsive Design**: Fully optimized for mobile devices.
 
 ## Technologies Used
-- **HTML5**: For structuring the content of the web pages.
-- **CSS3**: For styling the web pages, including layout, colors, and fonts.
+- **HTML5**: For structuring web content.
+- **CSS3**: For styling, including layout, colors, and fonts.
 - **Bootstrap 5.3.3**: For responsive design and prebuilt components.
-- **Font Awesome**: For icons used in the application.
-- **JavaScript**: For handling the functionality of the application.
+- **Font Awesome**: For icons used in the app.
+- **JavaScript**: For handling functionality like adding, completing, editing, and deleting tasks.
 
 ## Usage
-**1. Navigation Bar**:
-The navigation bar provides links to different sections of the website:
+**1. Navigation Bar**
 
-- **Home**: View your to-do list and manage tasks.
-- **In-Progress**: View only the tasks that are currently in-progress.
-- **Complete**: View only the tasks that have been completed.
+- **Home**: View and manage all tasks.
+- **In-Progress**: View tasks that are in-progress.
+- **Complete**: View tasks that are completed.
 
 **2. Adding Tasks**
-- Enter the task description in the input field labeled "ADD A TASK HERE".
-- Click the "Add" button (with a plus icon) or press the Enter key to add the task to your list.
+- Enter task details and click "Add" or press Enter.
 
 **3. Completing and Deleting Tasks**
-- **Complete a Task**: Click the checkmark button next to a task to mark it as complete.
-- **Revert a Task**: Click the rotate-left button next to a completed task to mark it as incomplete.
-- **Delete a Task**: Click the trash button next to a task to remove it from the list.
+- **Complete a Task**: Click the checkmark to mark as complete.
+- **Revert a Task**: Click the undo button to revert a completed task.
+- **Delete a Task**: Click the trash button to remove a task.
 
 **4. Filtering Tasks**
-- **All Tasks**: View all tasks regardless of their status.
-- **In-Progress**: View only the tasks that are currently in-progress.
-- **Complete**: View only the tasks that have been completed.
+- View all tasks or filter by status (In-Progress, Complete).
