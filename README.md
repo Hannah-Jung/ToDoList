@@ -1,6 +1,8 @@
-# To-Do List
+# TO-DO LIST
 
-Welcome to the To-Do List project, a simple and efficient web application for managing your daily tasks. This app allows you to add, complete, update, and delete tasks, with the ability to filter them by status.
+Welcome to the TO-DO LIST project, a simple and efficient web application for managing your daily tasks. This app allows you to add, complete, update, and delete tasks, with the ability to filter them by status.
+
+![image](https://github.com/user-attachments/assets/bc9483f1-d510-4c11-931f-1c57c60c3996)
 
 ## Table of Contents
 
@@ -10,15 +12,21 @@ Welcome to the To-Do List project, a simple and efficient web application for ma
 - [Usage](#usage)
 
 ## Introduction
-The To-Do List project provides a straightforward way to manage tasks. With an intuitive interface, users can add, complete, edit, or delete tasks and filter them by status. Built with Bootstrap, the app is fully responsive and works seamlessly on all devices.
+The TO-DO LIST project provides a straightforward way to manage tasks. With an intuitive interface, users can add, complete, edit, or delete tasks and filter them by status. Built with Bootstrap, the app is fully responsive and works seamlessly on all devices.
 
 ## Features
 - **Add New Tasks**: Easily add new tasks to the list.
 - **Complete/Incomplete Tasks**: Mark tasks as complete with a check button or revert them back to incomplete.
 - **Edit Tasks**: Modify task descriptions or cancel edits.
 - **Delete Tasks**: Remove tasks from the list with the delete button.
-- **Filter Tasks**: View tasks by status (All, In-Progress, Complete).
+- **Filter Tasks**: View tasks by status (All, In-Progress, or Complete).
 - **Responsive Design**: Fully optimized for mobile devices.
+
+
+https://github.com/user-attachments/assets/d44d8e53-8691-499e-9f1e-bb90feedb332
+
+https://github.com/user-attachments/assets/37279028-eac7-48c2-9598-ab264e9ff9a4
+
 
 ## Technologies Used
 - **HTML5**: For structuring web content.
@@ -30,12 +38,12 @@ The To-Do List project provides a straightforward way to manage tasks. With an i
 ## Usage
 **1. Navigation Bar**
 
-- **Home**: View and manage all tasks.
+- **All**: View and manage all tasks.
 - **In-Progress**: View tasks that are in-progress.
 - **Complete**: View tasks that are completed.
 
 **2. Adding Tasks**
-- Enter task details and click "Add" or press Enter.
+- Enter task details and click "Add" button or press Enter.
 
 **3. Completing and Deleting Tasks**
 - **Complete a Task**: Click the checkmark to mark as complete.
@@ -43,4 +51,4 @@ The To-Do List project provides a straightforward way to manage tasks. With an i
 - **Delete a Task**: Click the trash button to remove a task.
 
 **4. Filtering Tasks**
-- View all tasks or filter by status (In-Progress, Complete).
+- View all tasks or filter by status (In-Progress or Complete).
